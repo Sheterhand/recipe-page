@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&family=Young+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&family=Young+Serif&display=swap');
+
+
+body{
+    background-color: var(--eggshell);
+    padding: 5% 0;
+    color: var(--wenge-brown);
+}
+
+.container{
+    max-width: 46rem;
+    background-color: var(--white);
+    padding-inline: 2em;
+    margin-inline: auto;
+    border-radius: 20px;
+    padding: 2.4rem;
+}
+
+img{
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+h1{
+    font-family: 'Young Serif', serif;
+    font-size: 2.5rem;
+    color: var(--dark-charcoal);
+    font-weight: 400;
+}
+
+.container p{
+    margin: 1.2rem;
+}
+
+h3{
+    color: var(--dark-raspberry);
+    font-size: 1.3rem;
+    padding-left:1rem;
+    font-weight: 700;
+}
+
+.rose-box{
+    background-color: var(--rose-white);
+    border-radius: 10px;
+    padding: 1rem;
+}
+
+.rose-box li::marker {
+    color: var(--dark-raspberry);
+}
+
+li {
+    padding: 5px;
+}
+
+.container h2 {
+    font-family: 'Young Serif', serif;
+    color: var(--nutmeg);
+    font-size: 1.7rem;
+    font-weight: 700;
+    margin: 1rem 0;
+}
+
+ol li::marker{
+    color: var(--nutmeg);
+    font-weight: bold;
+}
+
+.instructions-box{
+    border-top: 1px solid var(--light-grey);
+    border-bottom: 1px solid var(--light-grey);
+    padding: 5px 0;
+}
+
+table{
+    width: 100%;
+    color: inherit;
+}
+
+td {
+    width: 50%;
+}
+
+td span {
+    font-weight: bold;
+    color: var(--nutmeg);
+}
+
+table {
+    border-collapse: collapse;
+  }
+
+tr {
+    border-bottom: 1px solid var(--light-grey);
+}
+
+tr .highlight {
+    padding-top: 10px; 
+    padding-bottom:10px
+  }
+
+  .no-border {
+    border-bottom: unset;
+  }
+
+/* Colors */
+
+:root {
+    /* Primary */
+    --nutmeg: hsl(14, 45%, 36%);
+    --dark-raspberry: hsl(332, 51%, 32%);
+    /* Neutral  */
+    --white: hsl(0, 0%, 100%);
+    --rose-white: hsl(330, 100%, 98%);
+    --eggshell: hsl(30, 54%, 90%);
+    --light-grey: hsl(30, 18%, 87%);
+    --wenge-brown: hsl(30, 10%, 34%);
+    --dark-charcoal: hsl(24, 5%, 18%);
+}
+
+/* Typography */
+body{
+    font-family: 'Outfit', sans-serif;
+}
+
+@media (max-width: 46rem){
+    body{
+        padding: 0;
+    }
+    .container{
+        border-radius: unset;
+    }
+}
+  
+/* ---------------------- */
+/* Reset                  */
+/* ---------------------- */
+
+/* Box sizing */
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Reset margins */
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+figure,
+picture {
+    margin: 0;
+}
+
+/* set up the body */
+body {
+    line-height: 1.5;
+    min-height: 100vh;
+}
+
+/* make images easier to work with */
+img,
+picture {
+    max-width: 100%;
+    display: block;
+}
+
+/* make form elements easier to work with */
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
